@@ -1,0 +1,11 @@
+import os
+import joblib
+
+os.makedirs("models", exist_ok=True)
+
+joblib.dump(
+    rf_model,
+    "models/rf_care_load_model.pkl"
+)
+
+print("Random Forest model saved successfully.")
