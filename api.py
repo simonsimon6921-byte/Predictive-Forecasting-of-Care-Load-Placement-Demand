@@ -2,12 +2,12 @@ from pathlib import Path
 
 import joblib
 import pandas as pd
-from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
+from fastapi import FastAPI, HTTPException  # type: ignore[reportMissingImports]
+from fastapi.middleware.cors import CORSMiddleware  # type: ignore[reportMissingImports]
 
 
 # ============================================================
-# PATHS
+# PATH
 # ============================================================
 
 BASE_DIR = Path(__file__).resolve().parent

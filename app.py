@@ -10,7 +10,9 @@ warnings.filterwarnings("ignore")
 
 import numpy as np
 import pandas as pd
-import streamlit as st
+import importlib
+
+st = importlib.import_module("streamlit")
 import plotly.graph_objects as go
 
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
